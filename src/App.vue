@@ -15,7 +15,7 @@
 // import Employees from './components/Employees.vue'
 // import EmployeeCreate from './components/EmployeeCreate.vue'
 import axios from 'axios'
-import avatar from '@/assets/avatar.gif'
+import esther from '@/assets/esther.jpg'
 // eslint-disable
 
 export default {
@@ -28,7 +28,7 @@ export default {
     return {
 
       employees: [],
-      avatar: avatar
+      esther: esther
       
     }
   },
@@ -53,7 +53,7 @@ export default {
       newEmployee.first_name = employeeData[0].first_name;
       newEmployee.last_name = employeeData[0].last_name;
       newEmployee.email = employeeData[0].email;
-      newEmployee.avatar = this.avatar;
+      newEmployee.avatar = this.esther;
       this.employees.push(newEmployee);
 
       // Add by deconstruction
